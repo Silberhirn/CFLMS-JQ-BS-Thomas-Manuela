@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name ="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>Advanced</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<link href="bootstrap-4.3.1-dist/css/bootstrap.css" rel="stylesheet" type= "text/css" media="all">
+		<style>
+		.red{
+			background-color: red;
+			border: 1pt solid black;
+		}
+		.white{
+			background-color: white;
+			border: 1pt solid black;
+			}
+		.yellow{
+			background-color: yellow;
+			border: 1pt solid black;
+			}
+					.grey{
+			background-color: grey;
+			border: 1pt solid black;
+			}
+
+
+			
+		</style>
+		
+	</head>
+	<body>
+		<div class="container">
+			<p>Row 1:</p>
+			<div class="row red p-1">
+				
+				<div class ="col-lg-1 white">
+					1
+				</div>
+				<div class ="col-lg-1 white ml-auto">
+					2
+				</div>
+			</div>
+		</div>
+
+
+		<div class="container">
+			<p>Row 2:</p>
+			<div class="row yellow p-1">
+				
+				<div class ="col-lg-2 col-md-2 white">
+					1
+				</div>
+				<div class ="col-lg-2 offset-md-3 white">
+					2
+				</div>
+				<div class ="col-lg-2 col-md-2 white ml-auto">
+					3
+				</div>
+
+			</div>
+
+					<div class="container">
+			<p>Row 2 mit margin:</p>
+			<div class="row yellow p-1">
+				
+				<div class ="col-lg-2 col-md-2 white">
+					1
+				</div>
+				<div class ="col-lg-2 m-auto white">
+					2
+				</div>
+				<div class ="col-lg-2 col-md-2 white ">
+					3
+				</div>
+
+			</div>
+
+
+
+			<div class="container">
+			
+
+			<p>Row 3 </p>
+
+				<div class="row grey p-1">
+				
+				<div class ="col-lg-2 white">
+					1
+				</div>
+				<div class ="col-lg-6  white">
+					2
+				</div>
+				<div class ="col-lg-3 offset-lg-1 white">
+					3
+				</div>
+
+			</div>
+
+
+
+		</div>
+	</body>
+</html>
