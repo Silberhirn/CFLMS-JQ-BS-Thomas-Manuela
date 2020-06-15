@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>2do list</title>
+		<link rel="stylesheet" href="">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	</head>
+	<body>
+		
+		<h1>2do list</h1>
+		<ul>
+			<li>todo 1</li>
+			<li>todo 2</li>
+			<li>todo 3</li>
+			<li>todo 4</li>
+			<li>todo 5</li>
+		</ul>
+
+		<button id="add2do">add 2do</button>
+		<script>
+			$(document).ready(function() {
+		$('li').on('click', function() {
+		$(this).animate({
+		opacity: 0.0,
+		paddingLeft: '+=80'
+		}, 500, function() {
+		$(this).remove();
+		});
+		});
+		});
+
+		let button = $("#add2do");
+		button.on("click", function(){
+		
+		addButton();
+		
+		})
+
+		function addButton(){
+			$("ul").append("<li>new 2do </li>");
+		}
+
+
+		</script>
+	</body>
+</html>
